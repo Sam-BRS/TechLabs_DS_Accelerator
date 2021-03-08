@@ -14,8 +14,8 @@ def get_user_directory():
     global file_destination
     default_source = r"C:\Users\yams\Downloads"
     default_destination = r"C:\Users\yams\OneDrive\Desktop\TBDestroyed"
-    input_source = input(r"Enter the directory of the folder to clean or type 'default' to leave as default")
-    input_destination = input(r"Enter the directory of the destination folder or type 'default' to leave as default")
+    input_source = input(r"Enter the directory of the folder to clean or leave as blank and press enter to leave as default")
+    input_destination = input(r"Enter the directory of the destination folder or leave as blank and press enter to leave as default")
     if input_source == '':
         file_source = default_source
     else:
@@ -33,7 +33,7 @@ def move(x, y):
 get_user_directory()
 list_files = os.listdir(file_source)
 
-print("===== EXECUTION DU TRI ======")
+print("===== STARTING CLEANING ======")
 
 i = 0
 for f in list_files:
@@ -46,6 +46,6 @@ for f in list_files:
         move(cheminsrc, chemind)
         print(f + " MOVED")
 
-print(" ===== OPERATION COMPLETED ======")
+print(" ===== CLEANING COMPLETED ======")
 print(str(i) + " ELEMENTS MOVED")
 os.system("pause")
