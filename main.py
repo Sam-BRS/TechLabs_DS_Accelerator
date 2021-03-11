@@ -32,7 +32,7 @@ def compute_mandelbrot(N_max, some_threshold, nx, ny):
 
     return mandelbrot_set
 
-mandelbrot_set = compute_mandelbrot(100 , 100., 12010, 8010)
+mandelbrot_set = compute_mandelbrot(100 , 100., 6000, 6000)
 
 plt.imshow(mandelbrot_set.T, extent=[-2, 1, -1.5, 1.5])
 plt.gray()
