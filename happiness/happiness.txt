@@ -1,0 +1,6 @@
+Problem: How to improve happiness?
+
+Why this dataset: This dataset found on Kaggle rank from each countries by their Wolrd Happiness Index 
+reated by the  UN. This the variable that we want to explain and correspond to the column (score).
+The features (explanatory variables) are economical, public health, cultural and socio-political.
+Exploring this dataset might give way recommend leverage to improve general happiness in a country.
